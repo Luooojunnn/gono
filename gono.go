@@ -5,7 +5,6 @@ import (
 	"gono/structs"
 )
 
-
 func Init(arg ...structs.InitParams) (structs.GonoIns)  {
 	initParamsFc(arg)
 	return structs.Init()
