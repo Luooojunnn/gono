@@ -3,6 +3,8 @@
 使用更 “前端” 一点的书写方式来写 go web 服务吧！
 
 
+**1. 启动服务就是那么简单！**
+
 ❌
 ```golang
 package main
@@ -42,4 +44,15 @@ func main()  {
 	gn := gono.Init()
 	gn.Listen(9000)
 }
+```
+
+**2. 请求拦截就是那么简单！**
+
+✅
+```golang
+package main
+
+import (
+	
+)
 ```
