@@ -4,17 +4,12 @@ import (
 	"fmt"
 	"strconv"
 	"net/http"
-	_ "gono/router"
+	"log"
 )
 
 type GonoIns struct {
-	Port int
+	// Port int
 }
-
-
-// func (this *GonoIns) Use()  {
-// 	fmt.Print(this)
-// }
 
 func Init() (GonoIns)  {
 	return GonoIns{}
@@ -22,5 +17,12 @@ func Init() (GonoIns)  {
 
 func (this *GonoIns) Listen(port int)  {
 	fmt.Printf("server is lisenning localhost:%d \n\n", port)
-	http.ListenAndServe("localhost:" + strconv.Itoa(port), nil)
+	err := http.ListenAndServe("localhost:" + strconv.Itoa(port), nil)
+	if err != nil {
+		log.Fatal("ListenAndServe: ", err.Error())
+	} 
 }
+
+// func (this *GonoIns) Use(arg interface{}) {
+// 	fmt.Println(arg)
+// }

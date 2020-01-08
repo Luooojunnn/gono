@@ -10,6 +10,7 @@ func Init(arg ...structs.InitParams) (structs.GonoIns)  {
 	return structs.Init()
 }
 
+
 func initParamsFc(arg []structs.InitParams){
 	if len(arg) == 0 {
 		fmt.Println("no config")

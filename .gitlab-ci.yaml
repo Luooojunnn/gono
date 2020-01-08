@@ -1,3 +1,0 @@
-test:
-  script:
-    - go run 123
