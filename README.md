@@ -49,6 +49,7 @@ func main()  {
 **2. 请求拦截就是那么简单！**
 
 ✅
+<<<<<<< HEAD
 
 **GET**
 ```golang
@@ -122,3 +123,12 @@ func PostUser() {
  - Extra - 额外信息，可以通过它将信息传递给下一个 Then
 
 *请注意：使用链式的 Then ，入参函数会顺序执行，后边的 Then 会覆盖前边的赋值*
+=======
+```golang
+package main
+
+import (
+	
+)
+```
+>>>>>>> d56cdd6073ff621add13939054fb95400f555a71
