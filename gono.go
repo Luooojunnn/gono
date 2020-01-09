@@ -2,7 +2,7 @@ package gono
 
 import (
 	"fmt"
-	"gono/structs"
+	"github.com/Luooojunnn/gono/structs"
 )
 
 func Init(arg ...structs.InitParams) (structs.GonoIns)  {
