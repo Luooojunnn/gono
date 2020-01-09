@@ -3,6 +3,16 @@
 使用更 “前端” 一点的书写方式来写 go web 服务吧！
 
 
+### 用法
+
+**go version 1.11+**
+
+> import "github.com/Luooojunnn/gono"
+
+go run 你的项目的时候，自动在 go.sum 中下载保存 gono 信息啦
+
+---
+
 **1. 启动服务就是那么简单！**
 
 ❌
