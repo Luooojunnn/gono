@@ -16,7 +16,7 @@ func Init() (GonoIns)  {
 }
 
 func (this *GonoIns) Listen(port int)  {
-	fmt.Printf("server is lisenning localhost:%d \n\n", port)
+	defer fmt.Printf("server is lisenning localhost:%d \n\n", port)
 	err := http.ListenAndServe("localhost:" + strconv.Itoa(port), nil)
 	if err != nil {
 		log.Fatal("ListenAndServe: ", err.Error())
